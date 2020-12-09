@@ -1,0 +1,14 @@
+{
+  "name": "recipe-server",
+  "version": "1.0.0",
+  "description": "A simple recipe server to accompany your recipes app!",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ruben Martinez Jr.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
