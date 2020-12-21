@@ -41,34 +41,34 @@ export const RECIPES = {
             "Enjoy!"
         ]
     },
-    "": {
-        name: "Max's Mac & Cheese",
-        image: "",
-        ingredients: [],
-        steps: []
-    },
-    "": {
-        name: "Tanya's Tortillas",
-        image: "",
-        ingredients: [],
-        steps: []
-    },
-    "": {
-        name: "Harry's Hotdogs",
-        image: "",
-        ingredients: [],
-        steps: []
-    },
-    "": {
-        name: "Lana's Lentils",
-        image: "",
-        ingredients: [],
-        steps: []
-    },
-    "": {
-        name: "Zack's Zuccini",
-        image: "",
-        ingredients: [],
-        steps: []
-    }
+//     "": {
+//         name: "Max's Mac & Cheese",
+//         image: "",
+//         ingredients: [],
+//         steps: []
+//     },
+//     "": {
+//         name: "Tanya's Tortillas",
+//         image: "",
+//         ingredients: [],
+//         steps: []
+//     },
+//     "": {
+//         name: "Harry's Hotdogs",
+//         image: "",
+//         ingredients: [],
+//         steps: []
+//     },
+//     "": {
+//         name: "Lana's Lentils",
+//         image: "",
+//         ingredients: [],
+//         steps: []
+//     },
+//     "": {
+//         name: "Zack's Zuccini",
+//         image: "",
+//         ingredients: [],
+//         steps: []
+//     }
 };
