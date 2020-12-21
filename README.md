@@ -1,6 +1,6 @@
 # recipe-server
 
-A simple static JSON server to return recipes.
+A simple static JSON server to return recipe information.
 
 ## API Endpoints
 
