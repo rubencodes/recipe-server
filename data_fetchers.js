@@ -1,4 +1,5 @@
 import { RECIPES } from "./data.js";
+import { upperCaseFirstLetter, sanitizeQuery } from "./utilities.js";
 
 export function getRecipe(recipeId) {
     return RECIPES[recipeId];
@@ -15,12 +16,12 @@ export function getIngredients() {
         .map((recipe) => recipe.ingredients)
         .reduce((soFar, ingredients) => [...soFar, ...ingredients], [])
         .filter(({ id }, index, array) => array.findIndex((ingredient) => ingredient.id === id) === index)
-        .map((ingredient) => ({ id: ingredient.id, name: ingredient.name }));
+        .map((ingredient) => ({ id: ingredient.id, name: upperCaseFirstLetter(ingredient.name) }));
 }
 
 export function searchRecipes(rawQuery = "") {
     const allRecipes = getRecipes();
-    const query = rawQuery.trim().toLowerCase();
+    const query = sanitizeQuery(rawQuery);
     if (!query) return [];
 
     return allRecipes
@@ -29,7 +30,7 @@ export function searchRecipes(rawQuery = "") {
 
 export function searchIngredients(rawQuery = "") {
     const allIngredients = getIngredients();
-    const query = rawQuery.trim().toLowerCase();
+    const query = sanitizeQuery(rawQuery);
     if (!query) return [];
 
     return allIngredients
